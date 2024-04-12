@@ -2,6 +2,8 @@
 
 `lfmt` is a very simple tool that can be used to extract values from strings in logfmt format. It is written in Rust and is available as a standalone binary.
 
+`lfmt` handles cases where a value contains spaces, such as `foo="bar baz"`. It can also handle cases where a value contains the `=` character, such as `foo="bar=baz=qux"`.
+
 ## Usage
 
 ### Input from stdin
